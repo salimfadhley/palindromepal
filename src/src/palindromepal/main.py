@@ -2,23 +2,22 @@
 
 from textual.app import App
 from textual import events
-from textual.widgets import Placeholder
+from textual.widgets import Placeholder, Header, Footer
+
+from palindromepal.input_text_widget import InputTextWidget
 
 
-class GridTest(App):
-    async def on_mount(self, event: events.Mount) -> None:
-        """Create a grid with auto-arranging cells."""
+class SimpleApp(App):
 
-        grid = await self.view.dock_grid()
+    async def on_load(self) -> None:
+        """Bind keys here."""
+        await self.bind("ctrl-q", "quit", "Quit")
 
-        grid.add_column("col", fraction=1, max_size=20)
-        grid.add_row("row", fraction=1, max_size=10)
-        grid.set_repeat(True, True)
-        grid.add_areas(center="col-2-start|col-4-end,row-2-start|row-3-end")
-        grid.set_align("stretch", "center")
-
-        placeholders = [Placeholder() for _ in range(20)]
-        grid.place(*placeholders, center=Placeholder())
+    async def on_mount(self) -> None:
+        await self.view.dock(Header(), edge="top", size=1)
+        await self.view.dock(Footer(), edge="bottom", size=1)
+        await self.view.dock(Placeholder(), edge="left", size=40)
+        await self.view.dock(InputTextWidget(), Placeholder(), edge="top")
 
 
-GridTest.run(title="Grid Test", log="textual.log")
+SimpleApp.run(log="textual.log")
