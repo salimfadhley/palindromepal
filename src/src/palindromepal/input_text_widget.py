@@ -7,7 +7,6 @@ from rich.panel import Panel
 from rich.style import Style
 from rich.text import Text
 from textual import events
-from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
 
@@ -28,7 +27,7 @@ class InputTextWidget(Widget):
         try:
             return value.lower()
         except (AttributeError, TypeError):
-            raise AssertionError('title attribute should be a string.')
+            raise AssertionError("title attribute should be a string.")
 
     def on_click(self) -> None:
         sys.exit(0)

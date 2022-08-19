@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e1d5f6-6b82-4bcb-ae09-88998182bb63" name="Changes" comment="First add">
-      <change afterPath="$PROJECT_DIR$/src/src/palindromepal/input_text_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/palindromepal/letter_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/palindromepal/output_text_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/palindromepal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/palindromepal/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/palindromepal/input_text_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/palindromepal/input_text_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/palindromepal/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/palindromepal/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/palindromepal/palindromes/reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/palindromepal/palindromes/reverse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test_palindromepal/test_palindromes/test_reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test_palindromepal/test_palindromes/test_reverse.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/salimfadhley/workspace/scf/palindromepal/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.81542057"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/salimfadhley/workspace/scf/palindromepal/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.81542057&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -61,7 +67,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.python -m palindromepal.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="palindromepal" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,28 +112,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python -m palindromepal.main" type="PythonConfigurationType" factoryName="Python">
-      <module name="palindromepal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/palindromepal/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="palindromepal.main" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="update.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -144,6 +128,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.python -m shed --refactor --py39-plus" />
       <item itemvalue="Python.python -m palindromepal.main" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.palindromepal.main" />
@@ -151,8 +136,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Shell Script.update.sh" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.palindromepal.main" />
       </list>
     </recent_temporary>
@@ -166,6 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660861761878</updated>
       <workItem from="1660861763205" duration="2814000" />
+      <workItem from="1660929855893" duration="2498000" />
     </task>
     <task id="LOCAL-00001" summary="First add">
       <created>1660863103286</created>
@@ -198,5 +184,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/palindromepal$python__m_palindromepal_main.coverage" NAME="python -m palindromepal.main Coverage Results" MODIFIED="1660863358682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/palindromepal$main.coverage" NAME="main Coverage Results" MODIFIED="1660863625154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/src/palindromepal" />
+    <SUITE FILE_PATH="coverage/palindromepal$python__m_shed___refactor___py39_plus.coverage" NAME="python -m shed --refactor --py39-plus Coverage Results" MODIFIED="1660932339918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
