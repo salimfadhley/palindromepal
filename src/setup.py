@@ -8,6 +8,10 @@ try:
 except OSError:
     REQUIREMENTS = []
 
+packages = setuptools.find_packages("src")
+
+assert packages, "No packages found"
+
 setuptools.setup(
     name="palindromepal",
     version="0.0.1",
@@ -17,7 +21,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pypa/sampleproject",
-    packages=["palindromepal"],
+    packages=packages,
     package_dir={"": "src"},
     classifiers=[
         "Programming Language :: Python :: 3",
