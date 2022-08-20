@@ -30,4 +30,10 @@ setuptools.setup(
     ],
     python_requires=">=3.10",
     install_requires=REQUIREMENTS,
+    entry_points={
+        "console_scripts": [
+            "palindromepal = palindromepal.main:main",
+        ]
+
+    }
 )
